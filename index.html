@@ -1,13 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Homepage</title>
-  <link rel="stylesheet" href="./styles.css">
-</head>
-<body>
-  <h1>Homepage</h1>
-  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, aspernatur velit? Dignissimos pariatur minus quidem qui. Ipsam amet cupiditate voluptas blanditiis nobis odit. Harum nostrum impedit, accusantium totam mollitia blanditiis quibusdam minima quae tempore aspernatur nulla veniam officia laborum, voluptatem et unde enim itaque consequuntur magnam aliquid molestias sit dignissimos.</p>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Homepage</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <h1 class="sr-only">Homepage</h1>
+    <main class="main">
+      <section class="hero">
+        <picture class="portrait">
+          <source
+            media="(max-width: 768px)"
+            srcset="./assets/images/lighthouse-360w.jpeg" />
+          <source
+            media="(min-width: 769px)"
+            srcset="./assets/images/lighthouse-860w.jpeg" />
+          <img
+            src="./assets/images/lighthouse-360w.jpeg"
+            alt="White lighthouse glowing at dusk beneath a starry sky, with a small house at its base" />
+        </picture>
+        <div class="about">
+          <h2 class="about__heading">About me</h2>
+          <p class="about__text">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima
+            temporibus esse harum dolor nostrum? Laudantium optio voluptatem
+            atque qui consequuntur accusamus quod cumque sequi nemo delectus
+            facilis libero, repellendus esse et, nesciunt nostrum numquam
+            dolorum dignissimos repellat ducimus unde animi harum ipsa? Ratione,
+            velit nisi! Tempore dolorum impedit vel. Magni!
+          </p>
+        </div>
+        <div class="social">
+          <img
+            src="./assets/images/github.svg"
+            alt=""
+            width="25"
+            height="25" /><img
+            src="./assets/images/linkedin.svg"
+            alt=""
+            width="25"
+            height="25" /><img
+            src="./assets/images/x.svg"
+            alt=""
+            width="25"
+            height="25" />
+        </div>
+      </section>
+
+      
+    </main>
+  </body>
 </html>
