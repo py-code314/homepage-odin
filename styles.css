@@ -67,12 +67,12 @@ ul {
    =================== */
 
 @font-face {
-  font-family: "Fira Code";
+  font-family: 'Fira Code';
   src: url(./assets/fonts/Fira-Code/FiraCode-VariableFont_wght.ttf);
 }
 
 @font-face {
-  font-family: "Playfair Display";
+  font-family: 'Playfair Display';
   src: url(./assets/fonts/Playfair-Display/PlayfairDisplay-VariableFont_wght.ttf);
 }
 
@@ -144,7 +144,8 @@ ul {
   --space-1650: 3.875rem; /* 62px */
   --space-1700: 4rem; /* 64px */
   --space-2100: 5rem; /* 80px */
-  
+  /* --space- */
+
   /* Font weights */
   --fw-thin: 100;
   --fw-extra-light: 200;
@@ -158,17 +159,17 @@ ul {
   --fw-extra-black: 950;
 
   /* Font families */
-  --ff-fira-code: "Fira Code";
-  --ff-playfair-display: "Playfair Display";
-  
+  --ff-fira-code: 'Fira Code';
+  --ff-playfair-display: 'Playfair Display';
+
   /* Colors */
   --clr-black: hsl(0, 0%, 0%);
   --clr-white: hsl(0, 0%, 100%);
   --clr-red: hsl(0, 100%, 50%);
   --clr-green: hsl(120, 100%, 25%);
   --clr-blue: hsl(240, 100%, 50%);
-  --clr-light-blue: #0A91B1;
-  
+  --clr-light-blue: #0a91b1;
+
   /* Utilities */
   --radius-1: 0.3125rem; /* 5px */
   --radius-2: 0.625rem; /* 10px */
@@ -181,7 +182,6 @@ ul {
 body {
   font-family: var(--ff-fira-code), monospace;
 }
-
 
 .sr-only {
   clip: rect(1px, 1px, 1px, 1px);
@@ -196,7 +196,7 @@ body {
 
 .hero {
   padding-block-end: var(--space-400);
-  border: 1px solid hotpink;
+  /* border: 1px solid hotpink; */
   background: linear-gradient(155deg, var(--clr-light-blue) 38%, #fff 38% 100%);
 }
 
@@ -204,11 +204,9 @@ body {
   box-shadow: var(--shadow-1);
 }
 
-
-
 .hero__figure {
   padding: var(--space-600);
-  
+
   position: relative;
 }
 
@@ -220,12 +218,10 @@ body {
   font-size: var(--fs-name);
   line-height: 1.1;
   font-family: var(--ff-playfair-display), serif;
-  
 }
 
 .about {
   padding: var(--space-400);
-
 }
 
 .about__heading,
@@ -240,4 +236,49 @@ h2 {
   display: flex;
   justify-content: center;
   gap: var(--space-400);
+}
+
+.projects {
+  padding: var(--space-400);
+}
+
+.projects > * + * {
+  margin-block-end: var(--space-1600);
+}
+
+.projects__heading {
+  padding: var(--space-600);
+}
+
+.project {
+  box-shadow: var(--shadow-2);
+}
+
+.project__image-container {
+  height: 250px;
+  background-color: var(--clr-light-blue);
+}
+
+.project__header {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  padding: var(--space-200);
+}
+
+.project__name {
+  font-size: var(--fs-600);
+  font-weight: var(--fw-medium);
+}
+
+.project__links {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  gap: var(--space-200);
+}
+
+.project__description {
+  padding: var(--space-200);
+  padding-block-end: var(--space-800);
 }
