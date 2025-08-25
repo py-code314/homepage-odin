@@ -13,16 +13,14 @@
         <figure class="hero__figure">
           <picture class="portrait">
             <source
-              media="(max-width: 768px)"
-              srcset="./assets/images/lighthouse-360w.jpeg" />
+              media="(max-width: 599px)"
+              srcset="./assets/images/lighthouse-cropped-480w.jpeg" />
             <source
-              media="(min-width: 769px)"
-              srcset="./assets/images/lighthouse-860w.jpeg" />
+              media="(min-width: 600px)"
+              srcset="./assets/images/lighthouse-800w.jpeg" />
             <img
-              src="./assets/images/lighthouse-360w.jpeg"
-              alt="White lighthouse glowing at dusk beneath a starry sky, with a small house at its base"
-              width="280"
-              height="420" />
+              src="./assets/images/lighthouse-cropped-480w.jpeg"
+              alt="White lighthouse glowing at dusk beneath a starry sky, with a small house at its base" />
           </picture>
           <figcaption class="hero__caption">Ashley Williams</figcaption>
         </figure>
@@ -38,13 +36,23 @@
           </p>
         </div>
         <div class="social">
-          <img src="./assets/images/github.svg" alt="" width="25" height="25" />
-          <img
-            src="./assets/images/linkedin.svg"
-            alt=""
-            width="25"
-            height="25" />
-          <img src="./assets/images/x.svg" alt="" width="25" height="25" />
+          <a class="social__link" href=""
+            ><img
+              src="./assets/images/github.svg"
+              alt=""
+              width="25"
+              height="25"
+          /></a>
+          <a href="" class="social__link">
+            <img
+              src="./assets/images/linkedin.svg"
+              alt=""
+              width="25"
+              height="25" />
+          </a>
+          <a href="" class="social__link"
+            ><img src="./assets/images/x.svg" alt="" width="25" height="25"
+          /></a>
         </div>
       </section>
 
@@ -53,23 +61,35 @@
 
         <div class="project">
           <div class="project__image-container">
-            <img src="" alt="" class="project__image" />
+            <img
+              srcset="
+                ./assets/images/battleship-480w.png 480w,
+                ./assets/images/battleship-860w.png 860w
+              "
+              sizes="(min-width: 600px) 480px, 860px"
+              src="./assets/images/battleship-480w.png "
+              alt="Battleship game screen showing two grids with colored ship positions and messages indicating the computer has lost"
+              class="project__image" />
           </div>
           <div class="project__header">
             <h3 class="project__name">Project name</h3>
             <div class="project__links">
-              <img
-                src="./assets/images/github.svg"
-                alt=""
-                class="project__link-icon"
-                width="25"
-                height="25" />
-              <img
-                src="./assets/images/new-link.svg"
-                alt=""
-                class="project__link-icon"
-                width="25"
-                height="25" />
+              <a href="" class="project__link">
+                <img
+                  src="./assets/images/github.svg"
+                  alt=""
+                  class="project__link-icon"
+                  width="25"
+                  height="25" />
+              </a>
+              <a href="" class="project__link">
+                <img
+                  src="./assets/images/new-link.svg"
+                  alt=""
+                  class="project__link-icon"
+                  width="25"
+                  height="25" />
+              </a>
             </div>
           </div>
           <p class="project__description">
@@ -83,17 +103,22 @@
           <div class="project__header">
             <h3 class="project__name">Project name</h3>
             <div class="project__links">
-              <img
-                src="./assets/images/github.svg"
-                alt=""
-                class="project__link-icon"
-                width="25"
-                height="25" /><img
-                src="./assets/images/new-link.svg"
-                alt=""
-                class="project__link-icon"
-                width="25"
-                height="25" />
+              <a href="" class="project__link">
+                <img
+                  src="./assets/images/github.svg"
+                  alt=""
+                  class="project__link-icon"
+                  width="25"
+                  height="25" />
+              </a>
+              <a href="" class="project__link">
+                <img
+                  src="./assets/images/new-link.svg"
+                  alt=""
+                  class="project__link-icon"
+                  width="25"
+                  height="25" />
+              </a>
             </div>
           </div>
           <p class="project__description">
@@ -107,17 +132,22 @@
           <div class="project__header">
             <h3 class="project__name">Project name</h3>
             <div class="project__links">
-              <img
-                src="./assets/images/github.svg"
-                alt=""
-                class="project__link-icon"
-                width="25"
-                height="25" /><img
-                src="./assets/images/new-link.svg"
-                alt=""
-                class="project__link-icon"
-                width="25"
-                height="25" />
+              <a href="" class="project__link">
+                <img
+                  src="./assets/images/github.svg"
+                  alt=""
+                  class="project__link-icon"
+                  width="25"
+                  height="25" />
+              </a>
+              <a href="" class="project__link">
+                <img
+                  src="./assets/images/new-link.svg"
+                  alt=""
+                  class="project__link-icon"
+                  width="25"
+                  height="25" />
+              </a>
             </div>
           </div>
           <p class="project__description">
@@ -131,17 +161,22 @@
           <div class="project__header">
             <h3 class="project__name">Project name</h3>
             <div class="project__links">
-              <img
-                src="./assets/images/github.svg"
-                alt=""
-                class="project__link-icon"
-                width="25"
-                height="25" /><img
-                src="./assets/images/new-link.svg"
-                alt=""
-                class="project__link-icon"
-                width="25"
-                height="25" />
+              <a href="" class="project__link">
+                <img
+                  src="./assets/images/github.svg"
+                  alt=""
+                  class="project__link-icon"
+                  width="25"
+                  height="25" />
+              </a>
+              <a href="" class="project__link">
+                <img
+                  src="./assets/images/new-link.svg"
+                  alt=""
+                  class="project__link-icon"
+                  width="25"
+                  height="25" />
+              </a>
             </div>
           </div>
           <p class="project__description">
@@ -155,17 +190,22 @@
           <div class="project__header">
             <h3 class="project__name">Project name</h3>
             <div class="project__links">
-              <img
-                src="./assets/images/github.svg"
-                alt=""
-                class="project__link-icon"
-                width="25"
-                height="25" /><img
-                src="./assets/images/new-link.svg"
-                alt=""
-                class="project__link-icon"
-                width="25"
-                height="25" />
+              <a href="" class="project__link">
+                <img
+                  src="./assets/images/github.svg"
+                  alt=""
+                  class="project__link-icon"
+                  width="25"
+                  height="25" />
+              </a>
+              <a href="" class="project__link">
+                <img
+                  src="./assets/images/new-link.svg"
+                  alt=""
+                  class="project__link-icon"
+                  width="25"
+                  height="25" />
+              </a>
             </div>
           </div>
           <p class="project__description">
@@ -179,17 +219,22 @@
           <div class="project__header">
             <h3 class="project__name">Project name</h3>
             <div class="project__links">
-              <img
-                src="./assets/images/github.svg"
-                alt=""
-                class="project__link-icon"
-                width="25"
-                height="25" /><img
-                src="./assets/images/new-link.svg"
-                alt=""
-                class="project__link-icon"
-                width="25"
-                height="25" />
+              <a href="" class="project__link">
+                <img
+                  src="./assets/images/github.svg"
+                  alt=""
+                  class="project__link-icon"
+                  width="25"
+                  height="25" />
+              </a>
+              <a href="" class="project__link">
+                <img
+                  src="./assets/images/new-link.svg"
+                  alt=""
+                  class="project__link-icon"
+                  width="25"
+                  height="25" />
+              </a>
             </div>
           </div>
           <p class="project__description">
@@ -247,16 +292,14 @@
       <div class="footer__image">
         <picture class="picture">
           <source
-            media="(max-width: 768px)"
-            srcset="./assets/images/lake-with-boats-420.jpeg" />
+            media="(max-width: 799px)"
+            srcset="./assets/images/lake-with-boats-cropped-800w.jpeg" />
           <source
-            media="(min-width: 769px)"
-            srcset="./assets/images/lake-with-boats-1280.jpeg" />
+            media="(min-width: 800px)"
+            srcset="./assets/images/lake-with-boats-1280w.jpeg" />
           <img
-            src="./assets/images/lake-with-boats-420.jpeg"
-            alt="Colorful boats floating on clear turquoise water near a sandy beach"
-            width="320"
-            height="480" />
+            src="./assets/images/lake-with-boats-cropped-800w.jpeg"
+            alt="Colorful boats floating on clear turquoise water near a sandy beach" />
         </picture>
       </div>
     </footer>
