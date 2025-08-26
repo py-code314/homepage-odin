@@ -112,6 +112,7 @@ ul {
 
   /* Spaces */
   --space-40: 0.25rem;
+  --space-50: 0.3125rem;
   --space-60: 0.375rem;
   --space-80: 0.5rem;
   --space-100: 0.625rem;
@@ -140,11 +141,17 @@ ul {
   --space-1150: 2.625rem; /* 42px */
   --space-1200: 2.75rem; /* 44px */
   --space-1275: 2.9375rem; /* 47px */
+  --space-1500: 3.5rem; /* 56px */
   --space-1600: 3.75rem; /* 60px */
   --space-1650: 3.875rem; /* 62px */
   --space-1700: 4rem; /* 64px */
   --space-2100: 5rem; /* 80px */
-  --space-animation: 28.125rem; /* 450px */
+  --space-2300: 5.5rem; /* 88px */
+  --space-animation-mobile: 28.125rem; /* 450px */
+  --space-name-tablet: 13.125rem; /* 210px */
+  --space-animation-tablet: 12.5rem; /* 200px */
+
+  --width-image-tablet: 15.625rem; /* 250px */
 
   /* Font weights */
   --fw-thin: 100;
@@ -200,6 +207,18 @@ body {
   background: linear-gradient(155deg, var(--clr-light-blue) 38%, #fff 38% 100%);
 }
 
+@media (min-width: 37.5rem) {
+  .hero {
+    padding-block-start: var(--space-2300);
+    padding-inline: var(--space-1500);
+    background: linear-gradient(
+      155deg,
+      var(--clr-light-blue) 52%,
+      #fff 52% 100%
+    );
+  }
+}
+
 .portrait img {
   box-shadow: var(--shadow-1);
 }
@@ -207,6 +226,16 @@ body {
 .hero__figure {
   margin-inline: var(--space-800);
   position: relative;
+}
+
+@media (min-width: 37.5rem) {
+  .hero__figure {
+    float: left;
+    width: var(--width-image-tablet);
+    margin-block-start: calc(var(--space-1600) * -1);
+    margin-block-end: var(--space-400);
+    margin-inline-start: calc(var(--space-850) * -1);
+  }
 }
 
 .hero__caption {
@@ -222,7 +251,7 @@ body {
 
 @keyframes slide-and-bounce {
   0% {
-    transform: translateY(calc(var(--space-animation) * -1));
+    transform: translateY(calc(var(--space-animation-mobile) * -1));
   }
   90% {
     transform: translateY(var(--space-60));
@@ -233,8 +262,36 @@ body {
   }
 }
 
+@media (min-width: 37.5rem) {
+  .hero__caption {
+    left: var(--space-name-tablet);
+    top: var(--space-50);
+    font-size: var(--fs-1100);
+    animation: slide-right 1.2s ease-out;
+    white-space: nowrap;
+  }
+}
+
+@keyframes slide-right {
+  0% {
+    transform: translateX(calc(var(--space-animation-tablet) * -1));
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
 .about {
   padding: var(--space-400);
+}
+
+@media (min-width: 37.5rem) {
+  .about {
+    background-color: var(--clr-white);
+    box-shadow: var(--shadow-1);
+    padding-block: var(--space-1200);
+  }
 }
 
 .about__heading,
@@ -249,6 +306,12 @@ h2 {
   display: flex;
   justify-content: center;
   gap: var(--space-400);
+}
+
+@media (min-width: 37.5rem) {
+  .social {
+    display: none;
+  }
 }
 
 .projects {
@@ -315,3 +378,9 @@ h2 {
   display: flex;
   gap: var(--space-200);
 }
+
+/* TABLET DESIGN */
+
+/* .about {
+    float: left;
+  } */
