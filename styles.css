@@ -318,8 +318,22 @@ h2 {
   padding: var(--space-400);
 }
 
-.projects > * + * {
+@media (min-width: 37.5rem) {
+  .projects {
+    padding: var(--space-1500);
+  }
+}
+
+.projects__container > * {
   margin-block-end: var(--space-1600);
+}
+
+@media (min-width: 37.5rem) {
+  .projects__container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: var(--space-800);
+  }
 }
 
 .projects__heading {
@@ -329,6 +343,20 @@ h2 {
 .project {
   box-shadow: var(--shadow-2);
 }
+
+@media (min-width: 37.5rem) {
+  .project__image-container{
+    height: 250px;
+  }
+
+  .project__image {
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
+  }
+}
+
+
 
 .project__header {
   display: flex;
