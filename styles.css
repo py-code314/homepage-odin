@@ -309,7 +309,7 @@ h2 {
 }
 
 @media (min-width: 37.5rem) {
-  .social {
+  .hero > .social {
     display: none;
   }
 }
@@ -345,7 +345,7 @@ h2 {
 }
 
 @media (min-width: 37.5rem) {
-  .project__image-container{
+  .project__image-container {
     height: 250px;
   }
 
@@ -355,8 +355,6 @@ h2 {
     width: 100%;
   }
 }
-
-
 
 .project__header {
   display: flex;
@@ -382,19 +380,37 @@ h2 {
   padding-block-end: var(--space-800);
 }
 
-.footer__contact {
+.footer {
   background-color: var(--clr-light-blue);
-  padding: var(--space-400);
-  color: var(--clr-white);
+  padding-block-start: var(--space-800);
 }
 
-.footer__contact > *,
-.address > * {
-  margin-block-end: var(--space-400);
+@media (min-width: 37.5rem) {
+  .footer {
+    display: flex;
+    gap: var(--space-800);
+    align-items: center;
+    padding: var(--space-800);
+  }
+}
+
+.footer__contact {
+  padding-block-end: var(--space-800);
+  padding-inline: var(--space-200);
+  color: var(--clr-white);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-800);
+  align-items: center;
 }
 
 .address {
   font-size: var(--fs-300);
+}
+
+.address__mail {
+  margin-block-end: var(--space-600);
 }
 
 .address__contact-info a {
@@ -406,9 +422,3 @@ h2 {
   display: flex;
   gap: var(--space-200);
 }
-
-/* TABLET DESIGN */
-
-/* .about {
-    float: left;
-  } */
