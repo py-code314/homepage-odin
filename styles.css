@@ -121,7 +121,7 @@ ul {
 
   /* Colors */
   --clr-white: hsl(0, 0%, 100%);
-  --clr-light-blue: #0a91b1;
+  --clr-teal: hsl(180, 100%, 25%);
 
   /* Utilities */
   --shadow-1: 0px 5px 10px 0px hsla(0, 0%, 0%, 0.36);
@@ -146,7 +146,7 @@ body {
 
 .hero {
   padding-block-end: var(--space-400);
-  background: linear-gradient(155deg, var(--clr-light-blue) 38%, #fff 38% 100%);
+  background: linear-gradient(155deg, var(--clr-teal) 38%, #fff 38% 100%);
 }
 
 @media (min-width: 37.5rem) {
@@ -155,7 +155,7 @@ body {
     padding-inline: var(--space-1500);
     background: linear-gradient(
       155deg,
-      var(--clr-light-blue) 45%,
+      var(--clr-teal) 45%,
       #fff 45% 100%
     );
   }
@@ -165,7 +165,7 @@ body {
   .hero {
     background: linear-gradient(
       170deg,
-      var(--clr-light-blue) 60%,
+      var(--clr-teal) 60%,
       #fff 60% 100%
     );
     padding-block: var(--space-1200);
@@ -414,7 +414,7 @@ h2 {
 }
 
 .footer {
-  background-color: var(--clr-light-blue);
+  background-color: var(--clr-teal);
   padding-block-start: var(--space-800);
 }
 
