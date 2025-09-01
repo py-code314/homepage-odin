@@ -334,6 +334,7 @@ h2 {
 .social__link,
 .project__link,
 .address__link {
+  
   transition: all 1s ease-out;
 }
 
@@ -344,11 +345,17 @@ h2 {
 .address__link:hover,
 .address__link:focus {
   outline: 1px solid var(--clr-black);
+  outline-offset: 0;
   border-radius: var(--radius-1);
   background-color: var(--clr-black);
   transform: scale(1.1);
 }
 
+.invert-link img,
+.project__link img {
+
+  transition: all 1s ease-out;
+}
 .invert-link:hover img,
 .invert-link:focus img,
 .project__link:hover img,
