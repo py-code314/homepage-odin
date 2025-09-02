@@ -29,11 +29,11 @@ Footer contains the author's name, address, contact details, and a list of links
 
 #### Mobile View
 
-| ![Hero section](./assets/images/screenshots/screenshot-mobile-1.png) | ![Projects section](./assets/images/screenshots/screenshot-mobile-2.png) | ![Contact section](./assets/images/screenshots/screenshot-mobile-3.png) |
+![Hero section](./assets/images/screenshots/screenshot-mobile-1.png)  ![Projects section](./assets/images/screenshots/screenshot-mobile-2.png)  ![Contact section](./assets/images/screenshots/screenshot-mobile-3.png) 
 
 #### Tablet View
 
-| ![Top half of the page](./assets/images/screenshots/screenshot-tablet-1.png) | ![Bottom half of the page](./assets/images/screenshots/screenshot-tablet-2.png) |
+![Top half of the page](./assets/images/screenshots/screenshot-tablet-1.png)  ![Bottom half of the page](./assets/images/screenshots/screenshot-tablet-2.png) 
 
 #### Desktop View
 
