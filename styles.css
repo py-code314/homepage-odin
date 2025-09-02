@@ -66,6 +66,7 @@ ul {
    END OF RESET 
    =================== */
 
+/* Fonts */
 @font-face {
   font-family: 'Fira Code';
   src: url(./assets/fonts/Fira-Code/FiraCode-VariableFont_wght.ttf);
@@ -136,6 +137,7 @@ body {
   min-height: 100svh;
 }
 
+/* Hidden Page Title for screen readers */
 .sr-only {
   clip: rect(1px, 1px, 1px, 1px);
   clip-path: inset(50%);
@@ -147,6 +149,7 @@ body {
   position: absolute;
 }
 
+/* Add background gradient to hero section */
 .hero {
   padding-block-end: var(--space-400);
   background: linear-gradient(155deg, var(--clr-teal) 38%, #fff 38% 100%);
@@ -167,10 +170,12 @@ body {
   }
 }
 
+/* Limit width of hero container for bigger screens */
 .hero__container {
   max-width: var(--width-content);
 }
 
+/* Center hero container  */
 @media (min-width: 62.5rem) {
   .hero__container {
     margin: auto;
@@ -184,6 +189,7 @@ body {
   position: relative;
 }
 
+/* Float figure to the left on tablet */
 @media (min-width: 37.5rem) {
   .figure {
     float: left;
@@ -198,6 +204,7 @@ body {
   }
 }
 
+/* Remove float on desktop */
 @media (min-width: 62.5rem) {
   .figure {
     float: none;
@@ -216,6 +223,7 @@ body {
   box-shadow: var(--shadow-1);
 }
 
+/* Fill image to parent container */
 @media (min-width: 37.5rem) {
   .portrait__image {
     object-fit: fill;
@@ -224,6 +232,7 @@ body {
   }
 }
 
+/* Add animation to profile name */
 .figure__caption {
   position: absolute;
   left: var(--space-200);
@@ -235,6 +244,7 @@ body {
   animation: slide-and-bounce 1.2s ease-out;
 }
 
+/* Animation for mobile view */
 @keyframes slide-and-bounce {
   0% {
     transform: translateY(calc(var(--space-animation-mobile) * -1));
@@ -248,6 +258,7 @@ body {
   }
 }
 
+/* Animation for tablet view */
 @media (min-width: 37.5rem) {
   .figure__caption {
     left: var(--space-name-tablet);
@@ -268,6 +279,7 @@ body {
   }
 }
 
+/* Animation for desktop view */
 @media (min-width: 62.5rem) {
   .figure__caption {
     left: var(--space-200);
@@ -314,12 +326,14 @@ h2 {
   gap: var(--space-400);
 }
 
+/* Hide social links on tablet */
 @media (min-width: 37.5rem) {
   .about > .social {
     display: none;
   }
 }
 
+/* Show social links on desktop */
 @media (min-width: 62.5rem) {
   .about > .social {
     display: flex;
@@ -331,14 +345,14 @@ h2 {
   padding: 0.5em;
 }
 
-
+/* Animation for links */
 .social__link,
 .project__link,
 .address__link {
-  
   transition: all 1s ease-out;
 }
 
+/* Change link styles on hover */
 .social__link:hover,
 .social__link:focus,
 .project__link:hover,
@@ -352,11 +366,13 @@ h2 {
   transform: scale(1.1);
 }
 
+/* Animation for icons in links */
 .invert-link img,
 .project__link img {
-
   transition: all 1s ease-out;
 }
+
+/* Invert color of icons on hover */
 .invert-link:hover img,
 .invert-link:focus img,
 .project__link:hover img,
@@ -381,6 +397,7 @@ h2 {
   }
 }
 
+/* Limit and center content width for bigger screens */
 .projects__container,
 .footer__container {
   max-width: var(--width-content);
@@ -391,6 +408,7 @@ h2 {
   margin-block-end: var(--space-1600);
 }
 
+/* 2 x 2 grid layout for projects on tablet */
 @media (min-width: 40.625rem) {
   .projects__container {
     display: grid;
@@ -399,6 +417,7 @@ h2 {
   }
 }
 
+/* 3 x 3 grid layout for projects on desktop */
 @media (min-width: 62.5rem) {
   .projects__container {
     grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
@@ -409,6 +428,7 @@ h2 {
   box-shadow: var(--shadow-2);
 }
 
+/* Limit image height for tablet view */
 @media (min-width: 37.5rem) {
   .project__image-container {
     height: var(--height-image-tablet);
@@ -439,7 +459,7 @@ h2 {
   justify-content: space-between;
   align-items: start;
   gap: var(--space-200);
-  flex-shrink: 0;
+  flex-shrink: 0; /* Prevent icons from shrinking */
 }
 
 .project__link,
@@ -452,6 +472,7 @@ h2 {
   padding-block-end: var(--space-800);
 }
 
+/* Add background color to footer */
 .footer {
   background-color: var(--clr-teal);
   padding-block-start: var(--space-800);
@@ -469,6 +490,7 @@ h2 {
   }
 }
 
+/* Place contact info and image side by side on tablet */
 @media (min-width: 37.5rem) {
   .footer__container {
     display: flex;
@@ -494,6 +516,7 @@ h2 {
   align-items: center;
 }
 
+/* Contact info and image take up equal space on tablet */
 @media (min-width: 37.5rem) {
   .footer__contact {
     flex: 1;
@@ -510,6 +533,7 @@ h2 {
   }
 }
 
+/* Image takes up twice the space on desktop */
 @media (min-width: 62.5rem) {
   .footer__contact {
     flex: 1;
@@ -518,8 +542,6 @@ h2 {
   .footer__image-container {
     flex: 2;
   }
-
-  
 }
 
 .address {
@@ -543,5 +565,3 @@ h2 {
 .address__link {
   padding-inline: 0.5em;
 }
-
-
